@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Management</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center text-info">Blog Management</h1>
+      <form class="mb-3">
+        <div class="mb-3">
+          <input
+            id="title"
+            type="text"
+            class="form-control"
+            placeholder="Title"
+          />
+        </div>
+        <div class="mb-3">
+          <textarea
+            id="description"
+            class="form-control"
+            placeholder="description"
+          ></textarea>
+        </div>
+        <button id="btn-add" class="btn btn-primary">ADD</button>
+        <div id="btn-group" class="mb-3 d-none d-flex justify-content-between">
+          <button id="btn-back" class="btn btn-dark">BACK</button>
+          <button id="btn-edit" class="btn btn-info">EDIT</button>
+        </div>
+      </form>
+      <div id="notification"></div>
+      <h2 class="mb-3 text-center text-info">LIST</h2>
+      <div id="list">
+        <!-- <div class="card mb-3 p-2 d-flex flex-row justify-content-between">
+          <div>
+            <p><strong>Title</strong></p>
+            <p>Description</p>
+          </div>
+          <div>
+            <button class="btn btn-info">Edit</button>
+            <button class="btn btn-danger">Remove</button>
+          </div>
+        </div> -->
+      </div>
+    </div>
+    <noscript> you need to enable js to run this app </noscript>
+    <script src="../dist/bundle.js"></script>
+  </body>
+</html>
